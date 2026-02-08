@@ -8,7 +8,11 @@ const Navbar = () => {
 
       {/* Logo */}
       <div className="shrink-0">
-        <img src="/logo.png" alt="Moody Logo" className="h-10 w-auto" />
+        <img
+          src={`${import.meta.env.BASE_URL}logo.png`}
+          alt="Moody Logo"
+          className="h-10 w-auto"
+        />
       </div>
 
       {/* Desktop Menu */}
