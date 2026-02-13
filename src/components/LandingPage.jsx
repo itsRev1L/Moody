@@ -30,11 +30,7 @@ const LandingPage = () => {
         </div>
 
       </section>
-      <section className="relative w-full h-screen overflow-hidden bg-gray-800">
 
-
-
-      </section>
 
     </>
   )
