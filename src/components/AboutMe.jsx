@@ -73,7 +73,8 @@ const AboutMe = () => {
             </div>
           </div>
 
-          <div className='w-full md:w-1/2 flex justify-center order-2 md:order-2'>
+
+          <div className='hidden md:flex w-full md:w-1/2 justify-center order-2 md:order-2'>
             <img
               className="h-auto w-40 sm:w-48 md:w-52 lg:w-60 animate-pulse drop-shadow-[0_0_5px_rgba(255,255,255,.3)] hover:animate-none hover:brightness-110"
               src={`${import.meta.env.BASE_URL}logo.png`}
