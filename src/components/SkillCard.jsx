@@ -19,3 +19,5 @@ const SkillCard = ({ title, skills }) => {
 };
 
 export default SkillCard;
+
+

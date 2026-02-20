@@ -4,7 +4,7 @@ import Threads from './animate-ui/components/backgrounds/Threads'
 const LandingPage = () => {
   return (
     <>
-      <section className="relative w-full h-screen overflow-hidden bg-black">
+      <section className="relative w-full h-screen overflow-hidden ">
 
         <div className="absolute inset-0 z-0 ">
           <Threads
@@ -20,12 +20,11 @@ const LandingPage = () => {
             Moody
           </h1>
 
-          <p className="text-gray-300 
+          <p className="text-gray-300/70 font-bold
                 text-sm sm:text-base md:text-lg 
-                max-w-sm sm:max-w-md md:max-w-xl
+                max-w-sm sm:max-w-md md:max-w-3xl
                 leading-relaxed">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis itaque
-            laudantium sequi eveniet aliquid eius officiis.
+            {"< />"}  Moody by name, creative by nature — crafting web experiences that matter
           </p>
         </div>
 
