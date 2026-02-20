@@ -4,6 +4,8 @@ import AboutMe from './components/AboutMe'
 import LandingPage from './components/LandingPage'
 import Navbar from './components/Navbar'
 import Skills from './components/Skills'
+import Projects from './components/Projects'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -22,8 +24,8 @@ function App() {
             background: `
        radial-gradient(
          circle at top,
-         rgba(255, 255, 255, 0.03) 0%,
-         rgba(255, 255, 255, 0.03) 20%,
+         rgba(255, 255, 255, 0.05) 0%,
+         rgba(255, 255, 255, 0.05) 20%,
          rgba(0, 0, 0, 0.0) 60%
        )
      `,
@@ -32,6 +34,8 @@ function App() {
         <LandingPage />
         <AboutMe />
         <Skills />
+        <Projects />
+        <Footer />
 
       </div>
 
