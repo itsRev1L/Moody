@@ -3,16 +3,13 @@ import ProjectsCard from './ProjectsCard'
 
 const Projects = () => {
   const projects = [
-    { name: "TEST", desc: "TEST", image: "", live: "https://github.com/itsRev1L", github: "https://github.com/itsRev1L" },
-    { name: "TEST", desc: "TEST", image: "", live: "https://github.com/itsRev1L", github: "https://github.com/itsRev1L" },
-    { name: "TEST", desc: "TEST", image: "", live: "https://github.com/itsRev1L", github: "https://github.com/itsRev1L" },
-    { name: "TEST", desc: "TEST", image: "", live: "https://github.com/itsRev1L", github: "https://github.com/itsRev1L" },
-    { name: "TEST", desc: "TEST", image: "", live: "https://github.com/itsRev1L", github: "https://github.com/itsRev1L" },
-    { name: "TEST", desc: "TEST", image: "", live: "https://github.com/itsRev1L", github: "https://github.com/itsRev1L" },
+    { name: "TEST1", desc: "TEST", image: "", live: "https://github.com/itsRev1L", github: "https://github.com/itsRev1L" },
+    { name: "TEST2", desc: "TEST", image: "", live: "https://github.com/itsRev1L", github: "https://github.com/itsRev1L" },
+    { name: "TEST3", desc: "TEST", image: "", live: "https://github.com/itsRev1L", github: "https://github.com/itsRev1L" },
   ]
 
   return (
-    <section className="w-full min-h-screen bg-black py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
+    <section id='Projects' className="w-full min-h-screen bg-black py-16 md:py-20 lg:py-24 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-7xl">
 
         <div className="text-center mb-12 md:mb-16">

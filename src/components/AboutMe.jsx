@@ -6,7 +6,7 @@ const AboutMe = () => {
   return (
     <>
 
-      <section className="relative w-full h-screen overflow-hidden   border-neutral-900/50">
+      <section id='About' className="relative w-full h-screen overflow-hidden   border-neutral-900/50">
         <div className="container mx-auto h-full px-4 md:px-8 lg:px-16">
           <div className="flex flex-col md:flex-row justify-center md:justify-between items-center h-full gap-8 md:gap-4 lg:gap-8">
 
@@ -30,16 +30,8 @@ const AboutMe = () => {
 
               <div className='flex items-center gap-2 py-2 sm:py-3'>
                 <div className='w-1 h-5 sm:h-7 bg-white/40'></div>
-                <h3 className='text-white/70 text-lg sm:text-xl md:text-2xl font-light'>
-                  <TextType
-                    text={"Front-end Developer"}
-                    typingSpeed={70}
-                    pauseDuration={1500}
-                    showCursor={true}
-                    cursorCharacter="|"
-                    deletingSpeed={25}
-                    cursorBlinkDuration={0.6}
-                  />
+                <h3 className="text-white/70 text-lg sm:text-xl md:text-2xl font-light animate-pulse">
+                  Front-end Developer
                 </h3>
               </div>
 
@@ -58,16 +50,16 @@ const AboutMe = () => {
 
               <div className='flex gap-2 sm:gap-3 pt-2'>
                 <a className='text-white/40 hover:text-white/70 transition'>
-                  <FaGithub size={20} className='sm:w-6 sm:h-6 md:w-7 md:h-7' />
+                  <FaGithub size={28} className='sm:w-6 sm:h-6 md:w-7 md:h-7' />
                 </a>
                 <a className='text-white/40 hover:text-white/70 transition'>
-                  <FaLinkedin size={20} className='sm:w-6 sm:h-6 md:w-7 md:h-7' />
+                  <FaLinkedin size={28} className='sm:w-6 sm:h-6 md:w-7 md:h-7' />
                 </a>
                 <a className='text-white/40 hover:text-white/70 transition'>
-                  <FaTwitter size={20} className='sm:w-6 sm:h-6 md:w-7 md:h-7' />
+                  <FaTwitter size={28} className='sm:w-6 sm:h-6 md:w-7 md:h-7' />
                 </a>
                 <a className='text-white/40 hover:text-white/70 transition'>
-                  <FaDiscord size={20} className='sm:w-6 sm:h-6 md:w-7 md:h-7' />
+                  <FaDiscord size={28} className='sm:w-6 sm:h-6 md:w-7 md:h-7' />
                 </a>
               </div>
             </div>

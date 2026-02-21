@@ -36,7 +36,7 @@ const Skills = () => {
     // { name: 'Docker', icon: FaDocker, color: '#2496ED' },
   ];
   return (
-    <section className="relative w-full min-h-screen  flex items-center py-12 md:py-16 lg:py-20  border-neutral-900/50">
+    <section id='Skills' className="relative w-full min-h-screen  flex items-center py-12 md:py-16 lg:py-20  border-neutral-900/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
 
         <h2 className="text-white/80 text-2xl sm:text-3xl md:text-4xl font-light text-center mb-8 md:mb-12 lg:mb-16">

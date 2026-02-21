@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { Link } from "react-scroll";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const tabs = ["Home", "About", "Skills", "Projects"]
@@ -18,14 +18,16 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <ul className="hidden md:flex gap-6 text-white text-base font-medium">
         {tabs.map((item) => (
-          <li key={item}>
-            <a
-              href={`#${item.toLowerCase()}`}
-              className="relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-white after:transition-all hover:after:w-full"
-            >
-              {item}
-            </a>
-          </li>
+          <Link to={item} smooth={true} duration={500} >
+            <li key={item}>
+              <a
+                href={''}
+                className="relative after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-white after:transition-all hover:after:w-full"
+              >
+                {item}
+              </a>
+            </li>
+          </Link>
         ))}
       </ul>
 
@@ -49,24 +51,28 @@ const Navbar = () => {
       </button>
 
       {/* Mobile Menu */}
-      {open && (
-        <div className="absolute top-16 left-1/2 -translate-x-1/2 w-[90%] rounded-2xl bg-black/60 backdrop-blur-lg border border-white/15 p-6 md:hidden">
-          <ul className="flex flex-col gap-4 text-white text-center">
-            {tabs.map((item) => (
-              <li key={item}>
-                <a
-                  href={`#${item.toLowerCase()}`}
-                  onClick={() => setOpen(false)}
-                  className="block py-2 hover:text-gray-300 transition"
-                >
-                  {item}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </nav>
+      {
+        open && (
+          <div className="absolute top-16 left-1/2 -translate-x-1/2 w-[90%] rounded-2xl bg-black/60 backdrop-blur-lg border border-white/15 p-6 md:hidden">
+            <ul className="flex flex-col gap-4 text-white text-center">
+              {tabs.map((item) => (
+                <Link to={item} smooth={true} duration={500} >
+                  <li key={item}>
+                    <a
+                      href={`#${item.toLowerCase()}`}
+                      onClick={() => setOpen(false)}
+                      className="block py-2 hover:text-gray-300 transition"
+                    >
+                      {item}
+                    </a>
+                  </li>
+                </Link>
+              ))}
+            </ul>
+          </div>
+        )
+      }
+    </nav >
   );
 };
 
